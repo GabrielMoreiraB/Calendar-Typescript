@@ -22,7 +22,7 @@ export function getCalendarEndpoint(): Promise<ICalendar[]>{
 
 
 export function getEventsEndpoint(): Promise<IEvent[]> {
-    return fetch("http://localhost:8080/events").then((response) => {
+    return fetch(`http://localhost:8080/events`).then((response) => {
         return response.json();
     });
 }
